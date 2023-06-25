@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="head">
+    <div class="backgroundImage">
+      <h3 class="slogan">
+        <font size="+2">Artworks made out of passion.</font>
+      </h3>
+      <button class="button">Check some Art</button>
+    </div>
+  </div>
+  <div class="title">
+    <h3>Arts and Crafts!</h3>
+  </div>
+  <div class="bestSellingSection">
+    <h2>All Products</h2>
+    <div class="bestItemsContainer">
+      <div class="items-card" *ngFor="let product of products">
+        <img src="{{ product?.image }}" />
+        <h3>{{ product?.name }}</h3>
+        <p>
+          Artist: {{ product?.painter }}
+          <br />
+          {{ product?.category }}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="categories">
+    <div class="header">
+      <h2>Explore popular categories</h2>
+      <button class="button2" routerLink="/all-products">See all</button>
+    </div>
+    <div class="categories-item" id="oil"><h3>Oil paintings</h3></div>
+    <div class="categories-item" id="abstract"><h3>Abstract art</h3></div>
+    <div class="categories-item" id="surrealism"><h3>Surrealism</h3></div>
+    <div class="categories-item" id="pop"><h3>Pop art</h3></div>
+    <div class="categories-item" id="cubism"><h3>Cubism</h3></div>
+    <div class="categories-item" id="fine"><h3>Fine art</h3></div>
+    <div class="categories-item" id="impressionism"><h3>Impressionism</h3></div>
+    <div class="categories-item" id="photorealism"><h3>Photorealism</h3></div>
+  </div>
+</div>
+<!-- </div> -->

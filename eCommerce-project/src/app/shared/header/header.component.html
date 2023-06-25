@@ -1,0 +1,37 @@
+
+<div class="toolbar">
+  <img
+    width="60"
+    alt="New Art"
+    src="https://newartprojects.com/newnormal/wp-content/uploads/2020/12/newartslogo-ccc-600x600.jpg"/>
+  <div class="box">
+    <input type ="text" placeholder="Search..." />
+    <a href="#"><i class ="fa fa-search"></i></a>
+  </div>
+  <ul>
+    <li>
+      <a href="#">
+        <mat-icon aria-label="location icon">location_on</mat-icon>
+      </a>
+    </li>
+    <li>
+      <a href="#"  [matMenuTriggerFor]="aboveMenu">
+        <mat-icon aria-label="account icon">account_circle</mat-icon>
+      <mat-menu #aboveMenu="matMenu">
+        <button mat-menu-item>Register</button>
+        <button mat-menu-item routerLink="/login">Log in</button>
+      </mat-menu>
+    </a>
+    </li>
+    <li>
+      <a href="#">
+        <mat-icon aria-label="favorite icon">favorite</mat-icon>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/orders">
+        <mat-icon aria-label="cart icon">add_shopping_cart</mat-icon>
+      </a>
+    </li>
+  </ul>
+</div>

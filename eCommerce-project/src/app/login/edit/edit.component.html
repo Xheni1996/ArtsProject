@@ -1,0 +1,48 @@
+<div class="content-justify-center">
+    <div class="container">
+      <form>
+        <button type="button" (click)="onCancel()" class="cancelbtn">Cancel</button>
+        <img src="./assets/email1.jpg" />
+        <br>
+        <div class="form-group">
+          <p>Full Name</p>
+          <input type="text" id="firstname" name="firstname" class="form-control"/>
+        </div>
+        <div class="form-group">
+          <p>Email ID</p>
+          <label for="email"></label>
+          <input type="text" id="email" name="email" class="form-control" />
+        </div>
+        <div class="form-group">
+          <p>Mobile number</p>
+          <input type="number" id="MobileNumber" name="MobileNumber"class="form-control" />
+        </div>
+        <div class="form-group">
+          <p>Shipping Address</p>
+          <input type="text" id="shippingAddress" name="shippingAddress" class="form-control"/>
+      
+        </div>
+        <div class="form-group">
+          <div class="addRemoveAddress">
+            <input type="text" id="address" 
+             name="add" class="form-control1" />
+             <label for="text" (click)="removeCity()" class="cancel">x </label></div>
+        </div>
+        <div class="form-group">
+          <div class="addRemoveAddress">
+            <input type="text" id="address" class="fa-plus" 
+            name="add" class="form-control2" />
+  
+            <label type="button" (click)="addAddress()" class="shto">+</label></div>
+        </div>
+  
+        <div class="form-group">
+          <br>
+          <button type="submit" class="btn1">Save Change</button>
+          <button type="change" class="btn2">Change Password</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+

@@ -1,0 +1,88 @@
+<H1>Arts and Crafts</H1>
+<div class="categories">
+  <div class="oil-category">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0128/3633/9802/products/81TNNiaHZEL._SL1500_512x408.jpg?v=1587822203"
+    />
+    <h3>Oil paintings</h3>
+  </div>
+  <div class="abstract-category">
+    <img
+      src="https://images.unsplash.com/photo-1615184697985-c9bde1b07da7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWJzdHJhY3QlMjBhcnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+    />
+    <h3>Abstract art</h3>
+  </div>
+  <div class="surrealism-category">
+    <img
+      src="https://static.boredpanda.com/blog/wp-content/uploads/2015/01/surreal-paintings-jacek-yerka-9.jpg"
+    />
+    <h3>Surrealism</h3>
+  </div>
+  <div class="pop-category">
+    <img
+      src="https://www.daytonartinstitute.org/wp-content/uploads/2021/06/June-2021-ARTventures-Project-Example-Pop-art-portraits-MRB.jpeg"
+    />
+    <h3>Pop art</h3>
+  </div>
+  <div class="cubism-category">
+    <img
+      src="http://useumstorage.blob.core.windows.net/drupal-public/content-images/Written-Content/Curated-exhibitions/Futurism/Cubism/juan-legua-juan-gris-1911-a55e8deb.jpg"
+    />
+    <h3>Cubism</h3>
+  </div>
+  <div class="fine-category">
+    <img
+      src="https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/12/image15-1-300x300.jpg"
+    />
+    <h3>Fine art</h3>
+  </div>
+  <div class="impressionism-category">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Claude_Monet%2C_Impression%2C_soleil_levant.jpg/450px-Claude_Monet%2C_Impression%2C_soleil_levant.jpg"
+    />
+    <h3>Impressionism</h3>
+  </div>
+  <div class="photorealism-category">
+    <img
+      src="https://i0.wp.com/artdepartmental.com/wp-content/uploads/2011/01/IMG_0328edit.jpg?w=1850&ssl=1"
+    />
+    <h3>Photorealism</h3>
+  </div>
+</div>
+<div class="product">
+  <div class="search-bar">
+    <input type="text" placeholder="categories..." />
+    <span class="search-icon">
+      <i class="fas fa-search"></i>
+    </span>
+  </div>
+  <div class="sortCategories">
+    <label for="categories">Sort by:</label>
+    <select name="listOfCategories" id="categories">
+      <option value="mostPopular">Most Popular</option>
+      <option value="bestSelling">Best Selling</option>
+      <option value="lowPrice">Low Price</option>
+    </select>
+  </div>
+</div>
+<div class="container">
+  <div class="sidenav">
+    <div class="title">Your Account</div>
+    <a class="side-nav-link">Overview</a>
+    <a style="color: rgb(101, 101, 207)" class="side-nav-link">Orders</a>
+    <a class="side-nav-link">Wishlist</a>
+  </div>
+  <div class="productsPage">
+    <div class="product-card" *ngFor="let product of products">
+      <img src="{{ product?.image }}" routerLink="/product-details/{{product.id}}"/>
+      <div class="title">{{ product?.name }}</div>
+      <div class="description">{{ product?.description }}</div>
+      <div class="price">$99.99</div>
+      <div class="icons">
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+    
+  </div>
+</div>

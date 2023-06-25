@@ -1,0 +1,90 @@
+<div class="container">
+  <div class="header-container">
+    <div
+      class="product-image"
+      style="background-image: url('{{ painting?.image }}')"
+    >
+      <button class="back-button"><i class="fas fa-arrow-left"></i></button>
+      <button class="expand-button"><i class="fas fa-expand"></i></button>
+      <button class="wishlist-button"><i class="fas fa-heart"></i></button>
+    </div>
+    <div class="product-details-on-cart">
+      <h5>Arts and crafts</h5>
+      <h5><i class="fas fa-arrow-right"></i></h5>
+      <h5>Paintings</h5>
+      <h4>Brand Name: {{ painting?.painter }} </h4>
+      <h4>Product Name and Details: {{painting?.description}}</h4>
+      <!-- <h2 class="price">ALL</h2>
+      <h3>Old price</h3>
+      <h5>(% of off price)</h5> -->
+      <br /> <br>
+      <div class="add-remove-item">
+        <button class="subtract">-</button>
+        <p>Number</p>
+        <button class="add">+</button> <br />
+        <button class="add-to-cart">Add to cart</button>
+      </div>
+      <div class="estimated-delivery">
+        <p>Estimated delivery</p>
+        <br />
+        <p>Date:05/10/2085</p>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+          <a href="#">Option 1</a>
+          <a href="#">Option 2</a>
+          <a href="#">Option 3</a>
+        </div>
+      </div>
+      <div class="dropdown-container">
+        <button class="dropbtn">Dropdown 2</button>
+        <div class="dropdown-content">
+          <a href="#">Option 1</a>
+          <a href="#">Option 2</a>
+          <a href="#">Option 3</a>
+        </div>
+      </div>
+      <br /><br /><br /><br />
+      <div class="product-details-line">
+        <p>
+          <a href="#">Product details</a> <i class="fas fa-arrow-right"></i>
+        </p>
+      </div>
+      <div class="delivery-returns-line">
+        <p>
+          <a href="#">Delivery and Returns</a>
+          <i class="fas fa-arrow-right"></i>
+        </p>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="product-details">
+    <h2>Product Details</h2>
+    <p>Color:</p>
+    <p>Material:</p>
+    <p>Dimensions:</p>
+    <p>Origin:</p>
+  </div>
+  <br />
+  <div class="related-products">
+    <div class="bestSellingSection">
+      <h2>Related Products</h2>
+      <div class="bestItemsContainer">
+        <div class="items-card" *ngFor="let product of products">
+          <img
+            src="{{ product?.image }}"
+            alt="Art Poster"
+          />
+          <h3>"{{ product?.name }}"</h3>
+          <p>
+            Artist: {{ product?.painter }}
+            <br />
+            {{ product?.category }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

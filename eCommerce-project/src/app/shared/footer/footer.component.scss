@@ -1,0 +1,85 @@
+footer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+  
+    label {
+      font-size: 15px;
+      margin-bottom: 10px;
+    };
+    span {
+      font-size: 10px;
+      margin-bottom: 10px;
+    };
+  
+    .comapnyInfo {
+      display: flex;
+      flex-direction: column;
+      input {
+        padding: 15px;
+        border-radius: 10px;
+        border: 0.1px solid lightgray;
+      };
+      img {
+        margin-bottom: 20px;
+      };
+      .subscribe {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        div:last-child {
+          button {
+            padding: 15px;
+            border-radius: 10px;
+            background-color: blue;
+            color: white;
+            border: 0.1px solid lightgray;
+          };
+        };
+      };
+      .delivery {
+        display: flex;
+        flex-direction: column;
+      };
+    };
+  
+    .contacts,
+    .categories,
+    .help {
+      padding: 10px;
+      ul {
+        list-style: none;
+        padding-left: 0;
+        li {
+          font-size: 12px;
+          padding: 20px 0 0 0;
+        };
+      };
+    };
+  };
+
+   /* Responsive Styles */
+   @media screen and (max-width: 767px) {
+    .toolbar {
+      input {
+        width: 250px;
+      };
+    };
+  };
+  
+  @media screen and (max-width: 575px) {
+    .toolbar {
+      input,
+      ul {
+        display: none;
+      };
+    };
+  
+    footer {
+      flex-direction: column;
+      align-items: center;
+    };
+  };
+  

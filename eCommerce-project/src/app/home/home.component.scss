@@ -1,0 +1,406 @@
+
+.container {
+  //   display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // display: flex;
+  // grid-template-columns: auto;
+  // justify-content: center;
+  // position: absolute;
+  // text-align: center;
+  // color: white;
+  // height: auto;
+  // width: 1920px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // position: absolute;
+  text-align: center;
+  // color: white;
+  height: auto;
+  width: 1920px;
+  background-color: #f6e7e7;  
+
+}
+.head {
+  height: auto;
+  width: auto;
+  display: grid;
+  place-items: center;
+  margin-top: 100px;
+}
+.backgroundImage {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // flex-direction: row;
+  // background-image: url(https://www.worldatlas.com/r/w960-q80/upload/1f/e7/fd/1280px-van-gogh-starry-night-google-art-project.jpg);
+  // background-size: cover;
+  // background-position: center;
+  // border: 2px inset black;
+  // box-shadow: 0 0 5px rgba(60, 115, 178, 0.405);
+  // border-radius: 5px;
+  // // margin-bottom: 530px;
+  // // position: absolute;
+  // width: 1200px;
+  // height: 208px;
+  // left: 0px;
+  // top: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-image: url(https://www.worldatlas.com/r/w960-q80/upload/1f/e7/fd/1280px-van-gogh-starry-night-google-art-project.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 2px inset black;
+  box-shadow: 0 0 5px rgba(60, 115, 178, 0.405);
+  border-radius: 5px;
+  width: 1920px;
+  height: 400px;
+  margin-top: -50px;
+
+}
+
+.button {
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 18px 48px;
+gap: 10px;
+  height: 20%;
+  margin-top: 100px;
+  width: 140px;
+  height: 72px;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.button:hover {
+  background-color: #d2ee56;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+.slogan {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  color: #f6e7e7;
+  padding-top: 50px;
+  filter: drop-shadow(0px 4px 167px rgba(0, 0, 0, 0.4));
+}
+.title {
+  height: 80px;
+  color: #000;
+  margin-top: 20px;
+}
+.bestSellingSection {
+  display: flex;
+  // overflow-x: scroll;
+  gap: 10px;
+  // border: 2px solid black;
+  width: 100%; /* Change width to 100% */
+  padding: 10px; /* Add padding to create space for scrollbar */
+  box-sizing: border-box; /* Include padding in width calculation */
+  white-space: nowrap;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: flex-start;
+
+}
+.bestSellingSection h2 {
+  text-align: left;
+  font-size: 24px;
+  
+
+}
+.bestItemsContainer {
+  border: 2px inset black;
+  box-shadow: 0 0 5px rgba(60, 115, 178, 0.405);
+  border-radius: 5px;  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+  border: 2px solid black;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow: auto;
+  flex-wrap: nowrap;
+}
+.items-card{
+  width: auto;
+  height: auto;
+  background-color: #ddd;
+  position: relative;
+  flex: 0 0 243px;
+  
+}
+
+.items-card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.items-card h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.items-card p {
+  font-size: 14px;
+  color: #888;
+}
+
+.categories {
+  width: auto;
+  height: 936px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 10%;
+}
+
+.header {
+  padding-top: 200px;
+  grid-column: 1 / span 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categories-item {
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.categories-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(0);
+  transition: filter 0.3s ease;
+  z-index: -1;
+}
+
+.categories-item:hover::before {
+  filter: blur(5px);
+}
+
+.categories-item:hover h3 {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  
+}
+
+  .categories-item img {
+    transition: transform 0.3s ease;
+  }
+  
+  .categories-item:hover img {
+    transform: scale(1.2);
+  }
+
+.categories-item h3 {
+  position: relative;
+  z-index: 1;
+  color: #f7eeef;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  font-size: xx-large;
+  visibility: visible;
+  transition: visibility 0.3s ease;
+}
+
+#oil::before {
+  background-image: url(https://cdn.shopify.com/s/files/1/0128/3633/9802/products/81TNNiaHZEL._SL1500_512x408.jpg?v=1587822203);
+}
+
+#abstract::before {
+  background-image: url(https://images.unsplash.com/photo-1615184697985-c9bde1b07da7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWJzdHJhY3QlMjBhcnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+}
+
+#surrealism::before {
+  background-image: url(https://static.boredpanda.com/blog/wp-content/uploads/2015/01/surreal-paintings-jacek-yerka-9.jpg);
+}
+
+#pop::before {
+  background-image: url(https://www.daytonartinstitute.org/wp-content/uploads/2021/06/June-2021-ARTventures-Project-Example-Pop-art-portraits-MRB.jpeg);
+}
+
+#fine::before {
+  background-image: url(https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/12/image15-1-300x300.jpg);
+}
+
+#cubism::before {
+  background-image: url(http://useumstorage.blob.core.windows.net/drupal-public/content-images/Written-Content/Curated-exhibitions/Futurism/Cubism/juan-legua-juan-gris-1911-a55e8deb.jpg);
+}
+
+#impressionism::before {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Claude_Monet%2C_Impression%2C_soleil_levant.jpg/450px-Claude_Monet%2C_Impression%2C_soleil_levant.jpg);
+}
+
+#photorealism::before {
+  background-image: url(https://i0.wp.com/artdepartmental.com/wp-content/uploads/2011/01/IMG_0328edit.jpg?w=1850&ssl=1);
+}
+
+
+ .button2{
+  background-color: #ff9f9f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+ }
+ .button2:hover {
+  background-color: #ff6b6b;
+ }
+ #oil {
+  background-image: url(https://cdn.shopify.com/s/files/1/0128/3633/9802/products/81TNNiaHZEL._SL1500_512x408.jpg?v=1587822203);
+  background-image: cover;
+ }
+ #abstract {
+  background-image: url(https://images.unsplash.com/photo-1615184697985-c9bde1b07da7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWJzdHJhY3QlMjBhcnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+  background-image: cover;
+ }
+ #surrealism {
+ background-image: url(https://static.boredpanda.com/blog/wp-content/uploads/2015/01/surreal-paintings-jacek-yerka-9.jpg);
+  background-image: cover;
+}
+ #pop {
+  background-image: url(https://www.daytonartinstitute.org/wp-content/uploads/2021/06/June-2021-ARTventures-Project-Example-Pop-art-portraits-MRB.jpeg);
+  background-image: cover;
+ }
+ #fine {
+  background-image: url(https://d150u0abw3r906.cloudfront.net/wp-content/uploads/2021/12/image15-1-300x300.jpg);
+  background-image: cover;
+ }
+ #cubism {
+  background-image: url(http://useumstorage.blob.core.windows.net/drupal-public/content-images/Written-Content/Curated-exhibitions/Futurism/Cubism/juan-legua-juan-gris-1911-a55e8deb.jpg);
+  background-image: cover;
+ }
+ #impressionism {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Claude_Monet%2C_Impression%2C_soleil_levant.jpg/450px-Claude_Monet%2C_Impression%2C_soleil_levant.jpg);
+  background-image: cover;
+ }
+ #photorealism {
+  background-image: url(https://i0.wp.com/artdepartmental.com/wp-content/uploads/2011/01/IMG_0328edit.jpg?w=1850&ssl=1);
+  background-image: cover;
+ }
+.categories h3{
+  color:#f7eeef;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  font-size: xx-large;
+}
+ 
+ 
+  @media only screen and (max-width: 1200px) {
+      .container {
+        padding: 0 2vh;
+      }
+      .backgroundImage {
+        width: 100%;
+      }
+      .bestItemsContainer,
+      .categoryContainer {
+        gap: 1vh;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        width: 100%;
+        padding: 20px;
+      }
+    
+      .head {
+        margin-top: 50px;
+      }
+    
+      .backgroundImage {
+        width: 100%;
+        height: 150px;
+      }
+    
+      .button {
+        margin-top: 50px;
+      }
+    
+      .slogan {
+        padding-top: 30px;
+      }
+    
+      .title {
+        margin-top: 10px;
+      }
+    
+      .bestSellingSection {
+        margin-bottom: 10px;
+      }
+    
+      .bestSellingSection h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+    
+      .bestItemsContainer {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+      .items-card {
+        width: 180px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+    
+      .item-image {
+        width: 120px;
+        height: 120px;
+      }
+    
+      .item-name {
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+    
+      .item-price {
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+    
+      .item-description {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+    }

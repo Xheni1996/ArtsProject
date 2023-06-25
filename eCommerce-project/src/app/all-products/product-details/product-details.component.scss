@@ -1,0 +1,357 @@
+/* Default styles */
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .product-image {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    // background-image: url(https://www.edvardmunch.org/images/paintings/the-scream.jpg); 
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    background-image: cover;
+    width: 851px;
+    height: 741px;
+    top: 753px;
+  }
+  
+  .wishlist-button {
+    background-color: white;
+    border-radius: 15%;
+    grid-area: 5 / 6;
+    margin-left: auto;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .back-button {
+    border-radius: 10%;
+    background-color: white;
+    width: 53px;
+    height: 53px;
+    left: 880px;
+    top: 861px;
+  }
+  
+  .expand-button {
+    background-color: white;
+    border-radius: 10%;
+    grid-area: button;
+    place-self: end end;
+    width: 53px;
+    height: 53px;
+  }
+  
+  .product-details-on-cart {
+    width: 851px;
+    height: 741px;
+    left: 1102px;
+    top: 753px;
+  }
+  
+  h5 {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 11px;
+  }
+  
+  h4 {
+    width: 675px;
+    height: 96px;
+    left: 1102px;
+    top: 269px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+  }
+  
+  .price {
+    width: 175px;
+    height: 60px;
+    left: 1102px;
+    top: 397px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+  }
+  
+  .product-details-on-cart h3 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-decoration-line: line-through;
+  }
+  
+  .add-remove-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .add-to-cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 48px;
+    gap: 10px;
+    width: 232px;
+    height: 66px;
+    left: 1242px;
+    top: 527px;
+    background: #64A759;
+    border-radius: 16px;
+  }
+  
+  .estimated-delivery {
+    display: flex;
+    justify-content: space-around;
+    /* Body/B2 Light */
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    /* identical to box height, or 36px */
+    text-align: center;
+    letter-spacing: 0.02em;
+    /* B&W/4 */
+    color: #2E2E2E;
+  }
+  
+  .dropdown-container {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+  }
+  
+  .dropbtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3a3c31;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropbtn:hover {
+    background-color: #2fcc1e;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the dropdown links */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    background-color: #45a049;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .product-details-line {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+  }
+  
+  .product-details-line p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .product-details-line i {
+    margin-left: 5px;
+  }
+  
+  .delivery-returns-line {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+  }
+  
+  .delivery-returns-line p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .delivery-returns-line i {
+    margin-left: 5px;
+  }
+  
+  .product-details {
+    /* border: 5px solid black; */
+    width: 1566px;
+    height: auto;
+    left: 177px;
+    top: 1212px;
+  }
+  
+  .product-details p {
+    font-size: 26px;
+    border-bottom:  1px solid #000;
+  }
+  
+  .bestSellingSection {
+    color: #000;
+    margin-bottom: 20px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-start; */
+  }
+  
+  .bestSellingSection h2 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .bestItemsContainer {
+    border: 2px inset black;
+    box-shadow: 0 0 5px rgba(60, 115, 178, 0.405);
+    border-radius: 5px;  
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+    border: 2px solid black;
+  }
+  
+  .items-card {
+    width: 243px;
+    height: 398px;
+    background-color: #ddd;
+    position: relative;
+  }
+  
+  .items-card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 5%;
+  }
+  
+  .items-card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .items-card p {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  @media only screen and (max-width: 1200px) {
+    .header-container {
+      flex-direction: column;
+    }
+  
+    .product-image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .back-button {
+      position: static;
+    }
+  
+    .product-details-on-cart {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .product-image {
+      background-image: none;
+    }
+  
+    .wishlist-button {
+      grid-area: unset;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .expand-button {
+      grid-area: unset;
+      place-self: unset;
+      margin-top: 10px;
+    }
+  
+    .product-details-on-cart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .price {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .add-remove-item {
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .add-to-cart {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  

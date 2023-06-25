@@ -1,0 +1,82 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 100px;
+    width: 600px;
+    border-radius: 10px;
+}
+
+button.cancelbtn {
+    display: flex;
+    margin-left: 300px;
+    width: auto;
+    font-size: 12px;
+    border: none;
+}
+img {
+display: flex;
+margin-top: 50px;
+padding-top: 20px;
+}
+
+.form-group {
+    
+   flex-direction: column;
+    color: rgb(167, 154, 154);
+    margin: 16px;
+}
+.form-control {
+display: flex;
+width: 400px;
+border-radius: 11px;
+padding: 10px;
+color: rgb(53, 50, 50);
+}
+
+.form-control1 {
+display: inline;
+width: 400px;
+border-radius: 11px;
+padding: 10px;
+margin-top: 20px;
+}
+.form-control2 {
+    display: inline;
+width: 400px;
+border-radius: 11px;
+padding: 15px;
+margin-top: 10px;
+top: 15px;
+}
+
+.btn1 {
+display: flex;
+flex-direction: row;
+padding: 18px 48px;
+width: 150px;
+height: 66px;
+background: #4454a3;
+border-radius: 16px;
+} 
+.btn2 { 
+display: flex;
+flex-direction:row;
+padding: 18px 48px;
+width: 150px;
+height: 72px;
+background: #FFFFFF;
+border-radius: 12px;
+} 
+.form-group label.cancel {
+    margin-left: 9px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.btn1,
+.btn2 {
+    display: inline-block;
+    margin-right: 80px;
+}
